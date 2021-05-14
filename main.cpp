@@ -4,7 +4,7 @@
 using namespace std;
 int main() {
   char texto[40];
-  float horas1, horas2,horas3,horas4,tipo1,tipo2, tipo3,tipo4, nombre1, nombre2,nombre3, nombre4,consumo1,consumo2,consumo3, consumo4,resultado1, resultado2, resultado3, resultado4,mensual1, mensual2, mensual3,mensual4;
+  float horas1, horas2,horas3,horas4,tipo1,tipo2, tipo3,tipo4, nombre1, nombre2,nombre3, nombre4,consumo1,consumo2,consumo3, consumo4,resultado1, resultado2, resultado3, resultado4,mensual1, mensual2, mensual3,mensual4,total;
   string type="luces, electrodomesticos,camaras";
   string name= "cmara exterior, luz exterior, luz interior";
  cout<<"Ingrese la cantidad horas diarias que el dispositivo 1 está encendido: "<<endl;
@@ -55,5 +55,7 @@ scanf("%s", texto);
  cout<<"El consumo mensusal del dipsoitivo 2 es :"<<mensual2<<"watts hora"<<endl;
  cout<<"El consumo mensusal del dipsoitivo 4 es :"<<mensual3<<"watts hora"<<endl;
  cout<<"El consumo mensusal del dipsoitivo 4 es :"<<mensual4<<"watts hora"<<endl;
+ total=resultado1+resultado2+resultado2+resultado4;
+ cout<< "El consumo mensual de la casa es de "<<total<<endl;
   return 0;
 }
